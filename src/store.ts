@@ -3,9 +3,6 @@ import { createStore, useStore as baseUseStore, Store } from 'vuex';
 
 import DocsSource from './data/DocsSource';
 import MainSource from './data/MainSource';
-import CollectionSource from '~/data/CollectionSource';
-import CommandoSource from '~/data/CommandoSource';
-import RPCSource from '~/data/RPCSource';
 
 import { Documentation, DocumentationCustomFile } from './interfaces/Documentation';
 import { SearchTerm, DocumentType, DocumentLink } from './util/search';
@@ -33,10 +30,7 @@ export const key: InjectionKey<Store<State>> = Symbol('docs');
 export const store = createStore<State>({
 	state: {
 		sources: [
-			{ source: MainSource, name: MainSource.name, id: MainSource.id },
-			{ source: CollectionSource, name: CollectionSource.name, id: CollectionSource.id },
-			{ source: CommandoSource, name: CommandoSource.name, id: CommandoSource.id },
-			{ source: RPCSource, name: RPCSource.name, id: RPCSource.id },
+			{ source: MainSource, name: MainSource.name, id: MainSource.id }
 		],
 		source: MainSource,
 		tag: MainSource.defaultTag,
@@ -84,11 +78,10 @@ export const store = createStore<State>({
 			const toJSON = (res: Response) => res.json();
 			// eslint-disable-next-line @typescript-eslint/no-empty-function
 			const noop = () => {};
-
 			const [fetchedDownloads, fetchedStars, fetchedContributors] = await Promise.all([
-				fetch('https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/discord.js').then(toJSON, noop),
-				fetch('https://api.github.com/repos/discordjs/discord.js').then(toJSON, noop),
-				fetch('https://api.github.com/repos/discordjs/discord.js/stats/contributors').then(toJSON, noop),
+				fetch('https://api.npmjs.org/downloads/range/2013-08-21:2100-08-21/discord-tickets').then(toJSON, noop),
+				fetch('https://api.github.com/repos/derpinou/discord-tickets').then(toJSON, noop),
+				fetch('https://api.github.com/repos/derpinou/discord-tickets/stats/contributors').then(toJSON, noop),
 			]);
 
 			if (fetchedDownloads) {

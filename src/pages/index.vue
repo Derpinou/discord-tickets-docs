@@ -1,5 +1,5 @@
 <template>
-	<div class="bg-discord-blurple-500 py-20">
+	<div class="bg-discord-red-500 py-20">
 		<div class="max-w-3xl sm:mx-auto text-center px-8 sm:px-16 flex flex-col gap-10 md:px-12">
 			<Logo class="filter drop-shadow-lg my-6" />
 			<InstallButton />
@@ -20,22 +20,14 @@
 	>
 		<div class="col-span-full">
 			<h2>About</h2>
-			<h3>Imagine a bot</h3>
+			<h3>discord-tickets</h3>
 			<p>
-				discord.js is a powerful
+				discord-tickets is a powerful
 				<a href="https://nodejs.org" target="_blank" rel="noopener"
 					>Node.js <heroicons-outline-external-link class="h-5 w-5 inline-block mb-1" aria-hidden="true"
 				/></a>
-				module that allows you to interact with the
-				<a href="https://discord.com/developers/docs/intro" target="_blank" rel="noopener"
-					>Discord API <heroicons-outline-external-link class="h-5 w-5 inline-block mb-1" aria-hidden="true"
-				/></a>
-				very easily. It takes a much more object-oriented approach than most other JS Discord libraries, making your
+				module that allows you to make tickets very easily. Making your
 				bot's code significantly tidier and easier to comprehend.
-			</p>
-			<p>
-				Usability, consistency, and performance are key focuses of discord.js, and it also has nearly 100% coverage of
-				the Discord API. It receives new Discord features shortly after they arrive in the API.
 			</p>
 		</div>
 		<div>

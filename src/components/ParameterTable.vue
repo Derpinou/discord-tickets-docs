@@ -2,7 +2,7 @@
 	<div class="grid">
 		<div class="overflow-x-auto lg:custom-scroll border dark:border-gray-600 rounded-md mt-2 mb-8">
 			<table class="!text-base !text-center !my-0 min-w-max xl:min-w-0">
-				<thead class="bg-discord-blurple-500 !text-gray-200">
+				<thead class="bg-discord-red-500 !text-gray-200">
 					<tr class="!uppercase">
 						<th class="!p-4 w-96">Parameter</th>
 						<th class="!p-4 w-48">Type</th>

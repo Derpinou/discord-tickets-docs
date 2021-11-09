@@ -24,7 +24,7 @@
 							mb-14
 							border-l-4 border-transparent
 							rounded-sm
-							hover:border-l-4 hover:border-discord-blurple-500
+							hover:border-l-4 hover:border-discord-red-500
 						"
 						@click="scrollTo(scopedName(property))"
 					>
@@ -37,12 +37,12 @@
 						<span class="text-gray-200 text-sm font-semibold uppercase">
 							<span
 								v-if="property.scope === 'static'"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
 								>S</span
 							>
 							<span
 								v-if="property.abstract"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
 								>A</span
 							>
 							<span
@@ -84,7 +84,7 @@
 							cursor-pointer
 							border-l-4 border-transparent
 							rounded-sm
-							hover:border-l-4 hover:border-discord-blurple-500
+							hover:border-l-4 hover:border-discord-red-500
 						"
 						@click="scrollTo(scopedName(method))"
 					>
@@ -97,12 +97,12 @@
 						<span class="text-gray-200 text-sm font-semibold uppercase">
 							<span
 								v-if="method.scope === 'static'"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
 								>S</span
 							>
 							<span
 								v-if="method.abstract"
-								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-blurple-500"
+								class="inline-flex items-center justify-center w-6 h-6 rounded-md bg-discord-red-500"
 								>A</span
 							>
 							<span
@@ -144,7 +144,7 @@
 							cursor-pointer
 							border-l-4 border-transparent
 							rounded-sm
-							hover:border-l-4 hover:border-discord-blurple-500
+							hover:border-l-4 hover:border-discord-red-500
 						"
 						@click="scrollTo(`e-${event.name}`)"
 					>

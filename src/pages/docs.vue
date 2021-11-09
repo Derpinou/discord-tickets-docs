@@ -21,9 +21,6 @@ import { whenever, useEventListener, useMagicKeys } from '@vueuse/core';
 
 import { useStore } from '~/store';
 import MainSource from '~/data/MainSource';
-import CollectionSource from '~/data/CollectionSource';
-import CommandoSource from '~/data/CommandoSource';
-import RPCSource from '~/data/RPCSource';
 import { fetchError } from '~/util/fetchError';
 
 import Sidebar from '~/components/Sidebar.vue';
@@ -44,9 +41,6 @@ const { Ctrl_K } = useMagicKeys({
 
 const sources = reactive({
 	[MainSource.id]: MainSource,
-	[CollectionSource.id]: CollectionSource,
-	[CommandoSource.id]: CommandoSource,
-	[RPCSource.id]: RPCSource,
 });
 
 const showBackToTop = ref(false);

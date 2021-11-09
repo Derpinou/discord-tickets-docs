@@ -1,6 +1,6 @@
 <template>
-	<code class="text-gray-200 bg-discord-blurple-560 p-4 md:text-lg mx-auto rounded-md shadow flex items-center"
-		><span class="hover:text-white mr-2">npm install discord.js</span>
+	<code class="text-gray-200 bg-discord-red-560 p-4 md:text-lg mx-auto rounded-md shadow flex items-center"
+		><span class="hover:text-white mr-2">npm install discord-tickets</span>
 		<button ref="copyButton" class="focus:outline-none" aria-label="Copy install command">
 			<heroicons-outline-clipboard-copy
 				v-if="!copied"
@@ -17,6 +17,7 @@
 		</button>
 	</code>
 </template>
+
 
 <script setup lang="ts">
 import { ref } from 'vue';
@@ -39,7 +40,7 @@ const { show: showTooltip, hide: hideTooltip } = useTippy(copyButton, {
 
 const copyInstallCmd = async () => {
 	try {
-		await navigator.clipboard.writeText('npm install discord.js');
+		await navigator.clipboard.writeText('npm install discord-tickets');
 		showTooltip();
 	} catch {}
 
